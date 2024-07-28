@@ -1,0 +1,12 @@
+@font-face{
+    font-family: 'Segoe UI';
+    src: url(../fonts/SegoeUI-Italic.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Futura-light';
+	src: url('../fonts/futurapt-light/FuturaPT-Light.eot');
+	src: url('../fonts/futurapt-light/FuturaPT-Light.woff') format('woff'),
+		 url('../fonts/futurapt-light/FuturaPT-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
