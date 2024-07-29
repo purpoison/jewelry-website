@@ -1,7 +1,10 @@
 $(document).ready(function () {
+  let screenWidth = screen.width;
+  let slidesNumber = screenWidth > 900 ? 3 : 1;
+
   $(".slider").slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: slidesNumber,
     slidesToScroll: 1,
     dots: true,
     centerMode: true,
@@ -13,11 +16,8 @@ $(document).ready(function () {
     console.log($(this));
   });
   const subMenu = document.querySelector(".sub-menu");
-  console.log(subMenu);
   const assortment = document.querySelector(".assortment-btn");
-  console.log(assortment);
   assortment.addEventListener("click", (e) => {
-    console.log("hello");
     if (subMenu.classList.contains("hide")) {
       subMenu.classList.remove("hide");
     } else {
